@@ -1,0 +1,41 @@
+{
+  "name": "webscope_blog",
+  "version": "1.0.0",
+  "description": "Webscope Company Official Blog Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate-webpack:prod": "webpack-validator webpack.config.js",
+    "webpack": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Benzo Media",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "hammerjs": "^2.0.8",
+    "highlightjs": "^9.8.0",
+    "imagesloaded": "^4.1.0",
+    "imports-loader": "^0.6.5",
+    "jquery": "^3.1.0",
+    "node-sass": "^3.8.0",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^1.6.0",
+    "sass-loader": "^4.0.0",
+    "script-loader": "^0.7.0",
+    "slick-carousel": "^1.6.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-validator": "^2.3.0"
+  },
+  "devDependencies": {
+    "node-sass": "^3.13.1"
+  }
+}

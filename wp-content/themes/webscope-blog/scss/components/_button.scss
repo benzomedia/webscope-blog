@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+
+
+
+  .btn.btn-primary{
+    background-color: $light-blue;
+    border: 1px solid $light-blue;
+    border-radius: 3px;
+    color: white;
+
+    @include prefix("transition",0.3s, ms moz webkit);
+
+    @include on-event(){
+      background-color: darken($light-blue, 10);
+    }
+  }

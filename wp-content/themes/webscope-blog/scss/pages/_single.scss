@@ -1,0 +1,71 @@
+.single {
+
+
+  .sidebar {
+    padding-top:150px;
+  }
+
+  .entry-title {
+    margin-bottom: 10px;
+  }
+
+
+
+  .entry-meta {
+
+    margin-bottom: 30px;
+    .byline {
+      font-size: 15px;
+    }
+
+    .posted-on {
+      font-size: 12px;
+      font-style: italic;
+      margin-top: -10px;
+    }
+  }
+
+
+  .entry-content {
+
+    h3 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+
+  }
+
+
+}
+
+.mc-after-post {
+  background: #EDEDED;
+  margin-top: 50px;
+  padding:  10px 30px 30px;
+  text-align: center;
+
+  #mc-after-spinner {
+    display:none;
+  }
+
+  #mc-after-loading-div {
+    padding-top: 15px;
+  }
+
+  @include respond-to('small'){
+    .form-group {
+      margin-right:5px;
+    }
+  }
+}
+
+.ws-banner {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.hljs {
+  font-size: 16px;
+  width:140%;
+}

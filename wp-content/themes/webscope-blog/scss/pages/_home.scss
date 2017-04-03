@@ -1,0 +1,193 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home {
+
+  article {
+    position: relative;
+  }
+
+  .overlay-div {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    padding: 30px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.featured-posts-div {
+
+
+  article {
+
+    .entry-title {
+
+      a {
+        color: white;
+      }
+
+    }
+
+    .entry-image {
+      border-radius: 2px;
+    }
+
+    .entry-meta {
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    .entry-content {
+      margin:0;
+      color: white;
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    .read-more-link{
+      margin-top: 20px;
+      a {
+        font-size: 18px;
+        color: $mid-grey;
+      }
+    }
+
+
+  }
+
+  .slick-slide {
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button.slick-arrow {
+    position: absolute;
+    bottom: 28px;
+    border-radius: 0;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+
+    @include on-event() {
+      color: $light-blue;
+      outline: none;
+    }
+
+    @include prefix("transition", '0.3s', ms moz webkit);
+
+    .material-icons {
+      vertical-align: middle;
+    }
+
+  }
+
+  button.slick-prev {
+    left: 48px;
+    z-index: 99;
+  }
+}
+
+  .index-posts {
+
+    article {
+
+      .entry-title {
+        font-weight:400;
+        a {
+          color: $text-color;
+        }
+
+      }
+
+      .entry-meta {
+        font-size: 12px;
+        font-style: italic;
+      }
+
+      .entry-content {
+        margin:0;
+        font-size: 14px;
+      }
+
+
+    }
+  }
+
+
+  .widget{
+    padding: 5px 20px;
+    background-color: $light-grey;
+
+    .widget-title {
+      font-size: 22px;
+      text-align: center;
+    }
+
+    p{
+      padding-left:10px;
+      padding-right:10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    #loading-div {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    button {
+      width: 100px;
+    }
+
+    #mc-spinner {
+      display: none;
+    }
+
+  }
+
+
+  .widget_sn_widget {
+
+    background-color: transparent;
+    margin-bottom: 0;
+
+    .sn-widget-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+        a {
+          font-size: 25px;
+          color: $dark-blue;
+          position: relative;
+          z-index: 4;
+
+          i {
+            position: relative;
+            z-index: 3;
+          }
+
+          @include prefix('transition', color 0.2s, moz webkit ms);
+
+          @include on-event(){
+            color: $light-blue;
+          }
+        }
+      }
+
+    }
+
+  }

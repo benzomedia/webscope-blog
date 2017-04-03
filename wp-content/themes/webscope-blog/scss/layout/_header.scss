@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header#masthead {
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  nav.navbar {
+
+    @include respond-to('small') {
+      float: right;
+    }
+  }
+
+  .menu-primary {
+    margin-top: 20px;
+
+    li > a {
+      color: $text-color;
+      font-size: 0.8em;
+    }
+
+    li.try-now > a {
+
+      background-color: $light-blue;
+      border: 1px solid $light-blue;
+      border-radius: 3px;
+      color: white;
+      padding: 10px 25px;
+
+      @include prefix("transition", 0.3s, ms moz webkit);
+
+      @include on-event() {
+        background-color: darken($light-blue, 10);
+      }
+    }
+
+    li {
+      @include respond-to('small') {
+        display: inline-block;
+
+      }
+
+    }
+  }
+
+  div.navbar-collapse {
+    padding-right: 0;
+  }
+
+  .navbar-toggle {
+    padding: 27px 10px 0;
+    margin-bottom: 0px;
+  }
+
+}
+
+#content {
+  padding-bottom: 50px;
+}
