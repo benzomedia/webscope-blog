@@ -15,39 +15,6 @@
 get_header(); ?>
 <div class="container">
 
-	<!-- Featured Posts Slider Div -->
-	<?php
-		$paged = (get_query_var('paged'));
-		if ($paged < 2) :?>
-		<div class="featured-posts-div hidden-xs">
-			<?php
-
-			// args
-			$args = array(
-			'numberposts'	=> -1,
-			'post_type'		=> 'post',
-			'meta_key'		=> 'featured',
-			'meta_value'	=> true
-			);
-
-
-			// query
-			$the_query = new WP_Query( $args );
-
-			?>
-			<?php if( $the_query->have_posts() ): ?>
-
-					<?php while( $the_query->have_posts() ) : $the_query->the_post();
-
-						get_template_part( 'template-parts/content-featured' );
-
-					  endwhile; ?>
-
-			<?php endif; ?>
-
-			<?php wp_reset_query(); ?>
-		</div>
-	<?php endif; ?>
 
 	<!-- Regular Posts Div -->
 	<div class="row">

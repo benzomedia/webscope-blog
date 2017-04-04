@@ -34,7 +34,7 @@
 	<!-- GOOGLE ANALYTICS -->
 
     <!--WEBSCOPE-->
-    <script src="http://localhost:3000/external.bundle.js" async data-webscope-id="c938a393-e22c-474e-a194-b90ffa7fc149"></script>
+<!--    <script src="http://localhost:3000/external.bundle.js" async data-webscope-id="c938a393-e22c-474e-a194-b90ffa7fc149"></script>-->
     <!--WEBSCOPE-->
 
 	<?php wp_head(); ?>

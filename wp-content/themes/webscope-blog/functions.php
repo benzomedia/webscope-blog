@@ -94,6 +94,7 @@ if ( ! function_exists( 'webscope_blog_setup' ) ) :
 
 		add_image_size( 'slider', 1200, 600, array( 'center', 'bottom' ) );
 		add_image_size( 'official', 1200, 800, array( 'center', 'center' ) );
+		add_image_size( 'archive', 670, 370, array( 'center', 'center' ) );
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
