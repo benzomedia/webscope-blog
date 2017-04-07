@@ -63,5 +63,6 @@ Procfile
 ######################
 
 wp-content/uploads/
+wp-content/debug.log
 wp-content/plugins/
 wp-config
